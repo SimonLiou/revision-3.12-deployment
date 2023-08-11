@@ -1,0 +1,12 @@
+name: CICD for serverless Application
+run-name: ${{ github.actor}} os dpomg CICD for serverless application
+
+on: 
+    push:
+        branches:[ Main, "*"]
+
+job: 
+    pre-deploys:
+        runs-on: ubuntu-latest
+        steps:
+            -run: echo "The job is automatically triggered by a ${{ github.event_name}}event."
